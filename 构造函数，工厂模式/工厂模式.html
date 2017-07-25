@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+//		简单的工厂模式
+//		public class Factory{
+//  public static ISample creator(int which){
+//      if (which==1)
+//          return new SampleA();
+//      else if (which==2)
+//          return new SampleB();
+//  }
+//}
+
+
+//			抽象工厂模式
+
+	public abstract class Factory{
+    public abstract Sample creator();
+    public abstract Sample2 creator(String name);
+}
+public class SimpleFactory extends Factory{
+    public Sample creator(){
+        .........
+        return new SampleA
+    }
+    public Sample2 creator(String name){
+        .........
+        return new Sample2A
+    }
+}
+ 
+public class BombFactory extends Factory{
+    public Sample creator(){
+        ......
+        return new SampleB
+    }
+    public Sample2 creator(String name){
+        ......
+        return new Sample2B
+    }
+}
+
+
+
+	</script>
+</html>

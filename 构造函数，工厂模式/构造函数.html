@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+//		第一种
+using namespace std;
+class time
+{
+public:
+    time()//constructor.构造函数
+    {
+        hour=0;
+        minute=0;
+        sec=0;
+    }
+    void set_time();
+    void show_time();
+private:
+    int hour, minute, sec;
+};
+int main()
+{
+    class time t1;
+    t1.show_time();
+    t1.set_time();
+    t1.show_time();
+    return 0;
+}
+void time::set_time()
+{
+    cin>>hour>>minute>>sec;
+}
+void time::show_time()
+{
+    cout<<hour<<":"<<minute<<":"<<sec<<endl;
+}
+	</script>
+	
+	
+</html>
